@@ -90,6 +90,82 @@
                             </div>
                         </li>
                         <li>
+                            <a class="uk-accordion-title" href="#">Classes d'incubation</a>
+                            <div class="uk-accordion-content">
+                                <ul type="disc" style="line-height: 35px;">
+                                    <li>
+                                        <a href="{{ route('ajouterEvenement') }}" class="white-text">
+                                            <i class="icofont-edit"></i>
+                                            Ajouter une classe
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('listeEvenement') }}" class="white-text">
+                                            <i class="icofont-list"></i>
+                                            Liste des classes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Gallerie</a>
+                            <div class="uk-accordion-content">
+                                <ul type="disc" style="line-height: 35px;">
+                                    <li>
+                                        <a href="{{ route('ajouterEvenement') }}" class="white-text">
+                                            <i class="icofont-edit"></i>
+                                            Ajouter une image / vidéo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('listeEvenement') }}" class="white-text">
+                                            <i class="icofont-list"></i>
+                                            Toute le gallerie
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Partenaire</a>
+                            <div class="uk-accordion-content">
+                                <ul type="disc" style="line-height: 35px;">
+                                    <li>
+                                        <a href="{{ route('ajouterEvenement') }}" class="white-text">
+                                            <i class="icofont-edit"></i>
+                                            Ajouter un partenaire
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('listeEvenement') }}" class="white-text">
+                                            <i class="icofont-list"></i>
+                                            Liste des partenaires
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Contacts</a>
+                            <div class="uk-accordion-content">
+                                <ul type="disc" style="line-height: 35px;">
+                                    <li>
+                                        <a href="{{ route('ajouterEvenement') }}" class="white-text">
+                                            <i class="icofont-edit"></i>
+                                            Ajouter un contact
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('listeEvenement') }}" class="white-text">
+                                            <i class="icofont-list"></i>
+                                            Liste des contacts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
                             <a class="uk-accordion-title" href="#">Qui sommes-nous ?</a>
                             <div class="uk-accordion-content">
                                 <ul type="disc">

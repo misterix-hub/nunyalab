@@ -10,25 +10,59 @@
     <title>Nunuyalab - Admin</title>
 </head>
     <body>
-            <div class="side-bar uk-width-1-4@l uk-width-1-4@l uk-width-1-1@s" style="padding: 5px;">
-                <div class="uk-container uk-container-large">
-                    <table width="100%">
-                        <tr>
-                            <td width="50">
-                                <img src="{{ URL::asset('assets/images/logo.png') }}" alt="logo" width="100%">
-                            </td>
-                            <td>
-
-                            </td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
+        <div style="padding: 5px; background-color: #166A51;">
+            <div class="uk-container uk-container-large">
+                <table width="100%">
+                    <tr>
+                        <td width="50">
+                            <img src="{{ URL::asset('assets/images/logo.png') }}" style="border-radius: 3px;"lt="logo" width="100%">
+                        </td>
+                        <td style="padding-left: 5px;" width="150">
+                            <h3 class="rajdhani" style="margin-bottom: -7px;"><b class="white-text">NUNYA<span class="yellow-text">LAB</span></b></h3>
+                            <span class="rajdhani" style="color: #f8bbd0; font-size: 14px;">Hub de créativtés</span>
+                        </td>
+                        <td class="rajdhani menu-item" width="65">
+                            <a href="" class="white-text">
+                                Accueil
+                            </a>
+                        </td>
+                        <td class="rajdhani menu-item" width="138">
+                            <a href="" class="white-text">
+                                Qui-sommes nous
+                            </a>
+                        </td>
+                        <td class="rajdhani menu-item" width="65">
+                            <a href="" class="white-text">
+                                Équipe
+                            </a>
+                        </td>
+                        <td class="rajdhani menu-item" width="100">
+                            <a href="" class="white-text">
+                                Évènements
+                            </a>
+                        </td>
+                        <td class="rajdhani menu-item" width="65">
+                            <a href="" class="white-text">
+                                Projets
+                            </a>
+                        </td>
+                        <td class="rajdhani menu-item" width="70">
+                            <a href="" class="white-text">
+                                Gallerie
+                            </a>
+                        </td>
+                        <td class="uk-text-right rajdhani menu-item">
+                            <a href="" class="white-text">
+                                <span uk-icon="icon: receiver"></span>
+                                Contactez-nous
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            
-            @yield('content')
-
-
+        </div>
+        
+        @yield('content')
 
         <script src="{{ URL::asset('uikit/js/uikit.min.js') }}"></script>
         <script src="{{ URL::asset('uikit/js/uikit-icons.min.js') }}"></script>
