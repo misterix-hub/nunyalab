@@ -34,15 +34,3 @@ Route::get('admin/projets/{id}/modifier', 'Admin\ProjetController@edit')->name('
 Route::get('admin/projets/{id}/supprimer', 'Admin\ProjetController@destroy')->name('supprimerProjet');
 Route::post('admin/projets/ajouter', 'Admin\ProjetController@store')->name('ajouterProjetForm');
 Route::post('admin/projets/{id}/update', 'Admin\ProjetController@update')->name('updateProjetForm');
-
-// SCRUD Contact, Gallerie, Partenaire
-
-Route::post('/search/{query}', 'SCRUD@search')->where('query', '.+')->name('search');
-
-Route::match(['get', 'post'], '/add/{item}', 'SCRUD@create')->name('add');
-
-Route::get('/list/{item}/{id?}', 'SCRUD@read')->name('read');
-
-Route::post('/update/{item}/{id}', 'SCRUD@update')->name('update');
-
-Route::any('/delete/{item}/{id}', 'SCRUD@delete')->name('delete');
