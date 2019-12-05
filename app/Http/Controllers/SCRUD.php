@@ -95,7 +95,7 @@ class SCRUD extends Controller
         return NetworkCore::apiResponse('ERROR', 'BAD_REQUEST');
     }
 
-    public function update(Request $request, $id){}
+    public function update(Request $request, $id){ return '';}
 
     public function delete(Request $request, $id){}
 }
