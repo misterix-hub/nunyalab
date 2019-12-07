@@ -1,7 +1,7 @@
 @extends('admin.base')
 
 @section('content')
-<div class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s" >
+    <div class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s" >
         <div class="admin-menu-bar rajdhani">
         
             <small>
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="uk-card-body" style="height: 100px; overflow: auto; padding: 15px;">
-                            <?=(strlen($equipe->biographie) > 100) ? substr($equipe->biographie, 0, 100) : $equipe->biographie ?>
+                            <?=(strlen($equipe->biographie) > 100) ? substr($equipe->biographie, 0, 100) . "..." : $equipe->biographie ?>
                         </div>
                         <div class="uk-card-footer" style="padding: 15px;">
                             <a href="{{ $equipe->facebook }}" class="uk-button uk-button-text">
@@ -76,6 +76,11 @@
         <div>
             <small>Copyright &copy; 2019 | Tous droits réservés</small>
         </div><br />
+    </div>
+    <div class="uk-width-1-4@l uk-width-1-1@m uk-width-1-1@s">
+        <br /><br /><br /><br /><br /><br /><br />
+        <h3 class="uk-margin-remove">Membres</h3>
+        <span style="font-size: 36px;">{{ count($equipes) }}</span> membres
     </div>
 
 @endsection

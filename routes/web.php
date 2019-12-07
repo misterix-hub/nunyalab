@@ -34,3 +34,8 @@ Route::get('admin/projets/{id}/modifier', 'Admin\ProjetController@edit')->name('
 Route::get('admin/projets/{id}/supprimer', 'Admin\ProjetController@destroy')->name('supprimerProjet');
 Route::post('admin/projets/ajouter', 'Admin\ProjetController@store')->name('ajouterProjetForm');
 Route::post('admin/projets/{id}/update', 'Admin\ProjetController@update')->name('updateProjetForm');
+
+/* VISITORS - EVENEMENT */
+
+Route::get('evenements/{id}/details', 'Visitors\MainController@evenement')->name('vDetailsEvenement');
+Route::get('projet/{id}/details', 'Visitors\MainController@projet')->name('vDetailsProjet');

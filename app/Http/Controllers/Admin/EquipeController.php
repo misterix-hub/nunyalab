@@ -16,7 +16,7 @@ class EquipeController extends Controller
     public function index()
     {
         return view('admin.equipe.liste', [
-            'equipes' => MembreEquipe::all()
+            'equipes' => MembreEquipe::orderBy('id')->get()
         ]);
     }
 
@@ -45,7 +45,7 @@ class EquipeController extends Controller
             $file = $_FILES['photo']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['photo']['tmp_name'];
@@ -139,7 +139,7 @@ class EquipeController extends Controller
             $file = $_FILES['photo']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['photo']['tmp_name'];

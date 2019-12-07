@@ -44,7 +44,7 @@ class EvenementController extends Controller
             $file = $_FILES['image']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['image']['tmp_name'];
@@ -127,7 +127,7 @@ class EvenementController extends Controller
             $file = $_FILES['image']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['image']['tmp_name'];

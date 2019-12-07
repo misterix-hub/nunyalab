@@ -109,7 +109,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Gallerie</a>
+                            <a class="uk-accordion-title" href="#">Galerie</a>
                             <div class="uk-accordion-content">
                                 <ul type="disc" style="line-height: 35px;">
                                     <li>
@@ -128,7 +128,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Partenaire</a>
+                            <a class="uk-accordion-title" href="#">Partenaires</a>
                             <div class="uk-accordion-content">
                                 <ul type="disc" style="line-height: 35px;">
                                     <li>

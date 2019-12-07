@@ -44,7 +44,7 @@ class ProjetController extends Controller
             $file = $_FILES['logo']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['logo']['tmp_name'];
@@ -128,7 +128,7 @@ class ProjetController extends Controller
             $file = $_FILES['logo']['name'];
             $path = pathinfo($file);
             $filename = time();
-            $ext = $path['extension'];
+            $ext = strtolower($path['extension']);
 
             if($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
                 $temp_name = $_FILES['logo']['tmp_name'];

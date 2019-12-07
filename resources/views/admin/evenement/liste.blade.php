@@ -40,7 +40,7 @@
                     @forelse ($evenements as $evenement)
                         <tr>
                             <td class="uk-table-link" width="300">
-                                <a class="uk-link-reset" href="">{{ $evenement->titre }}</a>
+                                <a class="uk-link-reset" href="{{ route('detailsEvenement', $evenement->id) }}">{{ $evenement->titre }}</a>
                             </td>
                             <td class="uk-text-nowrap uk-text-center">
                                 <a href="{{ route('detailsEvenement', $evenement->id) }}" uk-tooltip="title: Détails; pos: bottom" class="uk-button uk-button-secondary uk-button-small">

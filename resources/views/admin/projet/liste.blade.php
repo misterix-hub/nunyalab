@@ -40,7 +40,7 @@
                     @forelse ($projets as $projet)
                         <tr>
                             <td class="uk-table-link" width="300">
-                                <b><a class="uk-link-reset" href="">{{ $projet->nom }}</a></b>
+                                <a class="uk-link-reset" href="">{{ $projet->nom }}</a>
                             </td>
                             <td class="uk-text-nowrap uk-text-center">
                                 <a href="{{ route('detailsProjet', $projet->id) }}" uk-tooltip="title: Détails; pos: bottom" class="uk-button uk-button-secondary uk-button-small">

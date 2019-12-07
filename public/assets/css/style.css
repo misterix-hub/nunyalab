@@ -7,11 +7,34 @@ a {text-decoration: none !important;}
 .menu-item-cover .uk-accordion-title {font-size: 16px; color: #CCC;}
 .font-size-13 {font-size: 13px !important;}
 .white-text {color: #FFF !important;}
+.white {background-color: #FFF;}
 .yellow-text {color: #f1f517;}
 .pink-text {color: #f394b8;}
-.sized-menu {background-color: #CCC; position: fixed; right: 0; height: 50px; left: 22.8%; top: 0; border-bottom: 1px solid #AAA; line-height: 45px;}
-
+.red-text {color: #d20f34;}
+.sized-menu {background-color: #CCC; position: fixed; right: 0; height: 50px; left: 22.8%; top: 0; border-bottom: 1px solid #AAA; line-height: 45px; z-index: 3;}
+.slogan {font-size: 42px; color: #fff; text-shadow: 0 0 1px #000;}
 .admin-menu-bar {padding: 10px 0; margin-top: 70px;}
+.sloganI {color: #fff; text-shadow: 0 0 1px #000; font-size: 75px;}
+.sm-show, .sm-menu-show {display: none;}
+.carousel-text {margin-left: 80px;}
+table tr td.logo-td {width: 50px;}
 
 @font-face {font-family: rajdhani; src: url(../../fonts/Rajdhani/Rajdhani-SemiBold.ttf);}
 @font-face {font-family: comfortaa; src: url(../../fonts/Comfortaa/Comfortaa-VariableFont:wght.ttf);}
+
+@media(max-width: 1200px) {
+    .md-hide {display: none;}
+}
+@media(max-width: 1090px) {
+    .sm-menu-hide {display: none;}
+    .sm-menu-show {display: block;}
+}
+@media(max-width: 720px) {
+    .sloganI {font-size: 40px;}
+    .slogan {font-size: 30px;}
+    .sm-show {display: block;}
+    .sm-hide {display: none;}
+    .carousel-text {margin: 0 15px;}
+    table tr td.logo-td {width: 40px;}
+    .logo-text-td h3 {font-size: 18px;}
+}
