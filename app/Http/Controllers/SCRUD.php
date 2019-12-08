@@ -42,8 +42,33 @@ class SCRUD extends Controller
                 break;
 
             case 'gallerie': {
-                if(isset($data['fichier'])){
-                    return NetworkCore::apiResponse('OK', 'ADDED_SUCCESSFULLY');
+                if(isset($data['media'])){
+                    if(!isset($data['description'])) $data['description'] = '';
+                    if (($_FILES['media']['name'] !== "")) {
+
+                        $target_dir = "gallerie/";
+                        $file = $_FILES['media']['name'];
+                        $path = pathinfo($file);
+                        $filename = time();
+                        $ext = $path['extension'];
+
+                        if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
+                            $temp_name = $_FILES['media']['tmp_name'];
+                            $path_filename_ext = $target_dir . $filename . "." . $ext;
+
+                            if (move_uploaded_file($temp_name, $path_filename_ext)) {
+                                $query = $db->prepare("insert into gallerie(description, fichier, type_fichier) value(:description, :fichier, :type_fichier)");
+                                if($query->execute([
+                                   ':description' => $data['description'],
+                                   ':fichier' => $filename.'.'.$ext,
+                                   ':type_fichier' => $ext
+                                ]))
+                                    return NetworkCore::apiResponse('OK', 'ADDED_SUCCESSFULLY');
+                            }
+                        } else
+                            return NetworkCore::apiResponse('ERROR', 'UNSUPPORTED_FILE');
+                    }
+                    return NetworkCore::apiResponse('ERROR', 'INTERNAL');
                 } else {
                     return NetworkCore::apiResponse('ERROR', 'NO_DATA');
                 }
@@ -52,7 +77,31 @@ class SCRUD extends Controller
 
             case 'partenaire': {
                 if(isset($data['logo'])){
-                    return NetworkCore::apiResponse('OK', 'ADDED_SUCCESSFULLY');
+                    if(!isset($data['site_web'])) $data['site_web'] = '';
+                    if (($_FILES['logo']['name'] !== "")) {
+
+                        $target_dir = "partenaire/";
+                        $file = $_FILES['logo']['name'];
+                        $path = pathinfo($file);
+                        $filename = time();
+                        $ext = $path['extension'];
+
+                        if ($ext == 'png' || $ext == 'jpg' || $ext == 'jpeg') {
+                            $temp_name = $_FILES['logo']['tmp_name'];
+                            $path_filename_ext = $target_dir . $filename . "." . $ext;
+
+                            if (move_uploaded_file($temp_name, $path_filename_ext)) {
+                                $query = $db->prepare("insert into partenaire(logo, site_web) value(:logo, :site_web)");
+                                if($query->execute([
+                                    ':logo' => $filename.'.'.$ext,
+                                    ':site_web' => $data['site_web']
+                                ]))
+                                    return NetworkCore::apiResponse('OK', 'ADDED_SUCCESSFULLY');
+                            }
+                        } else
+                            return NetworkCore::apiResponse('ERROR', 'UNSUPPORTED_FILE');
+                    }
+                    return NetworkCore::apiResponse('ERROR', 'INTERNAL');
                 } else {
                     return NetworkCore::apiResponse('ERROR', 'NO_DATA');
                 }
@@ -95,7 +144,37 @@ class SCRUD extends Controller
         return NetworkCore::apiResponse('ERROR', 'BAD_REQUEST');
     }
 
-    public function update(Request $request, $id){ return '';}
+    public function update(Request $request, $item, $id){}
 
-    public function delete(Request $request, $id){}
+    public function delete(Request $request, $item, $id){
+        $table = '';
+
+        switch ($item){
+            case 'contact': {
+                $table = 'Contact';
+            }
+                break;
+            case 'gallerie': {
+                $table = 'Gallerie';
+            }
+                break;
+            case 'partenaire': {
+                $table = 'Partenaire';
+            }
+                break;
+        }
+
+
+        if(!empty($table)){
+            $db = new DB(DB::DB_PARAMS);
+
+            if($db->query('delete from '.$table." where id=".$id) !== false){
+                return NetworkCore::apiResponse('OK', '', 'DELETED');
+            }
+
+            return NetworkCore::apiResponse('ERROR', 'INTERNAL_ERROR');
+        }
+
+        return NetworkCore::apiResponse('ERROR', 'BAD_REQUEST');
+    }
 }
