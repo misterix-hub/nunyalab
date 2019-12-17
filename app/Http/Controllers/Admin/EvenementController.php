@@ -58,7 +58,7 @@ class EvenementController extends Controller
                     $evenement->description = $request->description;
                     $evenement->save();
 
-                    return back()->with('success', 'ÉVènement ajouté avec succèss !');
+                    return back()->with('success', 'Évènement ajouté avec succèss !');
                 } else {
                     return back()->with('error', 'Erreur de source iconnue. Réessayez !');
                 }

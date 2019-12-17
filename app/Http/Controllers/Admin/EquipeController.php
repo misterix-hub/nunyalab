@@ -57,6 +57,7 @@ class EquipeController extends Controller
                     $membreEquipe->nom = $request->nom;
                     $membreEquipe->prenom = $request->prenom;
                     $membreEquipe->photo = $path_filename_ext;
+                    $membreEquipe->type_equipe = $request->type_equipe;
                     $membreEquipe->email = $request->email;
                     $membreEquipe->facebook = $request->facebook;
                     $membreEquipe->whatsapp = $request->whatsapp;
@@ -126,6 +127,7 @@ class EquipeController extends Controller
         $membreEquipe = MembreEquipe::findOrFail($id);
         $membreEquipe->nom = $request->nom;
         $membreEquipe->prenom = $request->prenom;
+        $membreEquipe->type_equipe = $request->type_equipe;
         $membreEquipe->email = $request->email;
         $membreEquipe->facebook = $request->facebook;
         $membreEquipe->whatsapp = $request->whatsapp;

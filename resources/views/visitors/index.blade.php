@@ -1,4 +1,4 @@
-@extends('visitors.base')
+@extends('visitors.base', ['title'=>'Hub de créativité'])
 
 @section('content')
 
@@ -15,23 +15,23 @@
                                 <h1 uk-slideshow-parallax="x: 100,-100" class="rajdhani sloganI uk-margin-remove"><b>NUNYA<span class="yellow-text">LAB</span></b></h1>
                                 <div uk-slideshow-parallax="x: 200,-200" class="slogan">
                                     <div style="margin-bottom: 50px;">
-                                        Fédérer les génies pour innover !
+                                        Fédérer les génies pour innover
                                         <div style="border: 1px solid yellow; width: 150px;"></div>
                                     </div>
                                     <div class="sm-hide">
                                         <a href="#aProposScroll" uk-scroll class="uk-button uk-button-default uk-button-large white" style="border-radius: 25px;">
-                                            <span class="uk-text-danger">En savoir plus</span>
+                                            <span class="red-text">En savoir plus</span>
                                         </a>
                                         <a href="#target" uk-scroll class="uk-button uk-button-default uk-button-large white" style="border-radius: 25px;">
-                                            <span style="color: #43a047;">Contactez-nous</span>
+                                            <span class="green-text">Contactez-nous</span>
                                         </a>
                                     </div>
                                     <div class="sm-show uk-text-center">
                                         <a href="#aProposScroll" uk-scroll class="uk-button uk-button-large uk-button-default white" style="border-radius: 25px; padding-right: 20px; padding-left: 20px;">
-                                            <span class="uk-text-danger">En savoir plus</span>
+                                            <span class="red-text">En savoir plus</span>
                                         </a>
                                         <a href="#target" uk-scroll class="uk-button uk-button-large uk-button-default white" style="border-radius: 25px; padding-right: 20px; padding-left: 20px;">
-                                            <span style="color: #43a047;">Contactez-nous</span>
+                                            <span class="green-text">Contactez-nous</span>
                                         </a>
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                             <div class="uk-width-1-4@l uk-width-1-1@m uk-width-1-1@s">
                                 <div class="uk-card md-hide" uk-card-default style="background-color: white; border-radius: 10px;">
                                     <div class="uk-card-header">
-                                        <h3 class="uk-card-title uk-padding-remove rajdhani uk-text-danger">
+                                        <h3 class="uk-card-title uk-padding-remove rajdhani red-text">
                                             <i class="icofont-calendar"></i>
                                             ÉVÈNEMENTS
                                         </h3>
@@ -67,23 +67,23 @@
                                 <h1 uk-slideshow-parallax="x: 100,-100" class="rajdhani sloganI uk-margin-remove"><b>NOTRE <span class="yellow-text">MISSION</span></b></h1>
                                 <div uk-slideshow-parallax="x: 200,-200" class="slogan">
                                     <div style="margin-bottom: 50px;">
-                                        Fédérer les génies pour innover !
+                                        Fédérer les génies pour innover
                                         <div style="border: 1px solid yellow; width: 150px;"></div>
                                     </div>
                                     <div class="sm-hide">
                                         <a href="#aProposScroll" uk-scroll class="uk-button uk-button-default uk-button-large white" style="border-radius: 25px;">
-                                            <span class="uk-text-danger">En savoir plus</span>
+                                            <span class="red-text">En savoir plus</span>
                                         </a>
                                         <a href="#target" uk-scroll class="uk-button uk-button-default uk-button-large white" style="border-radius: 25px;">
-                                            <span href="#target" uk-scroll style="color: #43a047;">Contactez-nous</span>
+                                            <span href="#target" uk-scroll class="green-text">Contactez-nous</span>
                                         </a>
                                     </div>
                                     <div class="sm-show uk-text-center">
                                         <a href="#aProposScroll" uk-scroll class="uk-button uk-button-large uk-button-default white" style="border-radius: 25px; padding-right: 20px; padding-left: 20px;">
-                                            <span class="uk-text-danger">En savoir plus</span>
+                                            <span class="red-text">En savoir plus</span>
                                         </a>
                                         <a href="#target" uk-scroll class="uk-button uk-button-large uk-button-default white" style="border-radius: 25px; padding-right: 20px; padding-left: 20px;">
-                                            <span style="color: #43a047;">Contactez-nous</span>
+                                            <span class="green-text">Contactez-nous</span>
                                         </a>
                                     </div>
                                 </div>
@@ -92,14 +92,14 @@
                             <div class="uk-width-1-4@l uk-width-1-1@m uk-width-1-1@s">
                                 <div class="uk-card md-hide" uk-card-default style="background-color: white; border-radius: 10px;">
                                     <div class="uk-card-header">
-                                        <h3 class="uk-card-title uk-padding-remove rajdhani uk-text-danger">
+                                        <h3 class="uk-card-title uk-padding-remove rajdhani red-text">
                                             <i class="icofont-folder"></i>
                                             NOS PROJETS
                                         </h3>
                                     </div>
                                     <div class="uk-card-body uk-text-justify" style="padding-top: 0; padding-bottom: 0;">
                                         Consultez tous les projets incubés selon les différentes classes
-                                        (classe pré-incubation, incubation, accélération).
+                                        (pré-incubation, incubation, accélération).
                                     </div>
                                     <div class="uk-card-footer uk-text-right">
                                         <a class="uk-button uk-button-text" href="#projetScroll" uk-scroll>
@@ -125,13 +125,13 @@
     <div class="uk-container">
         <div class="uk-grid-small" uk-grid>
             <div class="uk-width-1-2@l uk-width-1-1@m3 uk-width-1-1@s">
-                <h2 class="rajdhani uk-margin-remove uk-text-danger" id="aProposScroll">
+                <h2 class="rajdhani uk-margin-remove red-text" id="aProposScroll">
                     <i class="icofont-question-circle"></i>
                     Qui sommes-nous?
                 </h2><br />
                 <div style="width: 150px; border-bottom: 1px solid orange;"></div><br />
                 <div class="uk-text-justify">
-                    @foreach ($aPropos as $aPropo)
+                    @foreach ($errors as $aPropo)
                         @if (strlen($aPropo->texte) > 400)
                             <?=substr($aPropo->texte, 0, 400) ?> ...
                         @else
@@ -139,16 +139,13 @@
                         @endif
                     @endforeach
                     <br />
-                    <a href="" class="uk-button uk-button-text rajdhani"></button>
-                        Lire plus
-                    </a>
                 </div>
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@m3 uk-width-1-1@s">
                 <img src="{{ URL::asset('assets/images/ban2.JPG') }}" alt="" width="100%">
             </div>
             <div class="uk-width-1-1 uk-text-center"><hr />
-                <h2 class="rajdhani uk-margin-remove uk-text-danger" id="evenementScroll">
+                <h2 class="rajdhani uk-margin-remove red-text" id="evenementScroll">
                     <i class="icofont-calendar"></i>
                     Quelques évènements
                 </h2>
@@ -172,16 +169,9 @@
                     </a><br />
                 </div>
             @endforeach
-
-            <div class="uk-width-1-1 uk-text-right">
-                <a href="">
-                    <span uk-icon="icon: list; ratio: 1"></span>
-                    Voir tous lévènements
-                </a><hr />
-            </div>
             
             <div class="uk-width-1-1 uk-text-center"><br />
-                <h2 class="rajdhani uk-margin-remove uk-text-danger" id="projetScroll">
+                <h2 class="rajdhani uk-margin-remove red-text" id="projetScroll">
                     <i class="icofont-folder"></i>
                     Quelques projets
                 </h2>
@@ -203,7 +193,7 @@
                                     </div>
                                     <div class="uk-card-body " style="height: 130px; overflow: auto; padding: 25px;">
                                         <h4 style="font-weight: 300;">
-                                            <a href="{{ route('vDetailsProjet', $projet->id) }}" style="color: #43a047;">
+                                            <a href="{{ route('vDetailsProjet', $projet->id) }}" style="color: #0f6f54;">
                                                 {{$projet->nom}}
                                             </a>
                                         </h4>
@@ -225,7 +215,7 @@
             </div>
 
             <div class="uk-width-1-1 uk-text-center"><br /><br />
-                <h2 class="rajdhani uk-margin-remove uk-text-danger" id="equipeScroll">
+                <h2 class="rajdhani uk-margin-remove red-text" id="equipeScroll">
                     <i class="icofont-handshake-deal"></i>
                     Notre équipe
                 </h2>
@@ -242,20 +232,20 @@
                                 </div>
                                 <div class="uk-width-expand">
                                 <h3 class="uk-margin-remove-bottom rajdhani">{{$equipe->nom.' '.$equipe->prenom}}</h3>
-                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Administration</time></p>
+                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{$equipe->type_equipe}}</time></p>
                                 </div>
                             </div>
                         </div>
                         <div class="uk-card-body" style="padding: 15px; height: 150px; overflow: auto;">
                             <p><?=(strlen($equipe->biographie) > 150) ? substr($equipe->biographie, 0, 150) . "..." : $equipe->biographie ?></p>
-                            <a href="">
-                                <span uk-icon="icon: facebook; ratio: 0.8;"></span>
+                            <a href="{{$equipe->facebook}}">
+                                <span uk-icon="icon: facebook; ratio: 0.8; color: #0f6f54"></span>
                             </a>&nbsp;
-                            <a href="">
-                                <span uk-icon="icon: whatsapp; ratio: 0.8;"></span>
+                            <a href="{{$equipe->whatsapp}}">
+                                <span uk-icon="icon: whatsapp; ratio: 0.8; color: #0f6f54"></span>
                             </a>&nbsp;
-                            <a href="">
-                                <span uk-icon="icon: mail; ratio: 0.9;"></span>
+                            <a href="{{$equipe->mail}}">
+                                <span uk-icon="icon: mail; ratio: 0.9; color: #0f6f54"></span>
                             </a>
                         </div>
                         <div class="uk-card-footer" style="padding: 15px;">
@@ -266,14 +256,14 @@
             @endforeach
 
             <div class="uk-width-1-1 uk-text-right"><br />
-                <a href="">
+                <a class="equipe_link" href="{{route('membrequipe')}}">
                     <span uk-icon="icon: list; ratio: 1"></span>
                     Voir toute l'équipe
                 </a><hr />
             </div>
 
             <div class="uk-width-1-1 uk-text-center"><br /><br />
-                <h2 class="rajdhani uk-margin-remove uk-text-danger">
+                <h2 class="rajdhani uk-margin-remove red-text">
                     <i class="icofont-handshake-deal"></i>
                     Nos partenaires
                 </h2><br />
@@ -301,7 +291,7 @@
             
             </div>
             <div id="location" class="uk-width-1-1 uk-text-center"><br /><br />
-                <h2 class="rajdhani uk-margin-remove uk-text-danger">
+                <h2 class="rajdhani uk-margin-remove red-text">
                     <i class="icofont-location-pin"></i>
                     Où nous trouver ?
                 </h2>

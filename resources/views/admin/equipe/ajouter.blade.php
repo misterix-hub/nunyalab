@@ -43,6 +43,12 @@
                         </div>
                     </div>
                     <div  class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">
+                        <div class="uk-inline uk-width-1-1 uk-margin-remove">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                            <input class="uk-input uk-width-1-1" required name="type_equipe" id="type_equipe" placeholder="Type d'équipe">
+                        </div>
+                    </div>
+                    <div  class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">
                         <div class="uk-inline uk-width-1-1">
                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
                             <input class="uk-input uk-width-1-1" type="text" required name="email" id="nom" placeholder="Email">

@@ -24,6 +24,7 @@ class ComposerStaticInit8f440c367ab3b9547ad9a0ac82eb5cb1
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -411,8 +412,10 @@ class ComposerStaticInit8f440c367ab3b9547ad9a0ac82eb5cb1
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Evenement' => __DIR__ . '/../..' . '/app/Evenement.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Galerie' => __DIR__ . '/../..' . '/app/Galerie.php',
         'App\\Http\\Controllers\\Admin\\EquipeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EquipeController.php',
         'App\\Http\\Controllers\\Admin\\EvenementController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/EvenementController.php',
+        'App\\Http\\Controllers\\Admin\\GalerieController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/GalerieController.php',
         'App\\Http\\Controllers\\Admin\\MainController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/MainController.php',
         'App\\Http\\Controllers\\Admin\\ProjetController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProjetController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',

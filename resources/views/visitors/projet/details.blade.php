@@ -7,7 +7,7 @@
             <div class="uk-width-1-1">
                 <ul class="uk-breadcrumb">
                     <li><a href="{{ route('index') }}">Acceuil</a></li>
-                    <li><span href="">Détails projet</span></li>
+                    <li><span href="">Détails du projet</span></li>
                 </ul>
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">

@@ -8,7 +8,7 @@
             <small>
                 <ul class="uk-breadcrumb">
                     <li><a href="{{ route('dashboard') }}"><b>Tableau de bord</b></a></li>
-                    <li><span>Modifier projet</span></li>
+                    <li><span>Modifier le projet</span></li>
                 </ul>
             </small>
 
@@ -26,7 +26,7 @@
                 </div>
             @endif
         </div>
-        <h4 class="rajdhani uk-margin-remove">Modifier projet</h4>
+        <h4 class="rajdhani uk-margin-remove">Modifier le projet</h4>
 
         @foreach ($projets as $projet)    
             <form action="{{ route('updateProjetForm', $projet->id) }}" method="post" enctype="multipart/form-data" class="rajdhani">

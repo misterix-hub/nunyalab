@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ URL::asset('uikit/css/uikit.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('icofont/icofont.css') }}">
-    <title>Nunuyalab - Admin</title>
+    <title>Nunyalab - Admin</title>
 </head>
     <body>
 
@@ -23,7 +23,7 @@
                                     </td>
                                     <td style="padding-left: 5px;">
                                         <h3 class="uk-margin-remove"><b class="white-text">NUNYA<span class="yellow-text">LAB</span></b></h3>
-                                        <span class="pink-text rajdhani">Hub de créativtés</span>
+                                        <span class="white-text rajdhani">Hub de créativté</span>
                                     </td>
                                 </tr>
                             </table>
@@ -113,15 +113,15 @@
                             <div class="uk-accordion-content">
                                 <ul type="disc" style="line-height: 35px;">
                                     <li>
-                                        <a href="{{ route('ajouterEvenement') }}" class="white-text">
+                                        <a href="{{ route('ajouterImage') }}" class="white-text">
                                             <i class="icofont-edit"></i>
                                             Ajouter une image / vidéo
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('listeEvenement') }}" class="white-text">
+                                        <a href="{{ route('listeImage') }}" class="white-text">
                                             <i class="icofont-list"></i>
-                                            Toute le gallerie
+                                            Toutes les images
                                         </a>
                                     </li>
                                 </ul>
@@ -191,8 +191,8 @@
                         </td>
                         <td class="uk-text-right" style="padding-right: 15px;">
                             <a uk-tooltip="title: Déconnexion; pos: bottom"  class="uk-button uk-button-default uk-border-circle uk-padding-remove"
-                            style="width: 40px; height; 40px; border: 1px solid #f06292;">
-                                <i class="icofont-power uk-text-danger"></i>
+                            style="width: 40px; height; 40px; border: 1px solid #d20f34;">
+                                <i class="icofont-power red-text"></i>
                             </a>
                         </td>
                     </tr>

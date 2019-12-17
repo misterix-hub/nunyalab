@@ -8,16 +8,18 @@
 
             <h1 class="rajdhani">Bienvenu(e) administrateur</h1>
 
-            <div class="uk-alert-danger" uk-alert>
+            <div class="uk-alert-danger" style="color: #d20f34;" uk-alert>
                 ESPACE RESERVE ADMINISTRATEUR !<br />
                 Si vous êtes arrivé sur cette page par erreur, veuillez la quitter immédiatement
                 puis signalez-nous ce fait dans un message s'il vous plaît ! Merci.
             </div>
-            <div class="uk-text-right">
-                <a href="" class="uk-button uk-button-primary" style="background-color: green;">
+            <div class="uk-te
+
+            xt-right">
+                <a href="" class="uk-button uk-button-primary" style="background-color: #0f6f54;">
                     Compte personnel
                 </a>
-                <a href="" class="uk-button uk-button-danger">
+                <a href="" class="uk-button uk-button-danger" style="background-color: #d20f34;">
                     Déconnexion
                 </a>
             </div>

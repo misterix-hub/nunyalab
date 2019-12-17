@@ -8,7 +8,7 @@
             <small>
                 <ul class="uk-breadcrumb">
                     <li><a href="{{ route('dashboard') }}"><b>Tableau de bord</b></a></li>
-                    <li><span>Liste évènements</span></li>
+                    <li><span>Liste des projets</span></li>
                 </ul>
             </small>
 
@@ -26,7 +26,7 @@
                 </div>
             @endif
         </div>
-        <h4 class="rajdhani uk-margin-remove">Liste évènements</h4>
+        <h4 class="rajdhani uk-margin-remove">Liste des projets</h4>
        
         <div class="uk-overflow-auto">
             <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
@@ -57,7 +57,7 @@
                     @empty
                         <tr>
                             <td colspan="4" class="uk-text-center">
-                                <b>Auncun évènement !</b>
+                                <b>Auncun projet enregistré !</b>
                             </td>
                         </tr>
                     @endforelse

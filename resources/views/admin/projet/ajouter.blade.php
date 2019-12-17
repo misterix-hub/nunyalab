@@ -8,7 +8,7 @@
             <small>
                 <ul class="uk-breadcrumb">
                     <li><a href="{{ route('dashboard') }}"><b>Tableau de bord</b></a></li>
-                    <li><span>Ajouter projet</span></li>
+                    <li><span>Ajouter un projet</span></li>
                 </ul>
             </small>
 
@@ -26,7 +26,7 @@
                 </div>
             @endif
         </div>
-        <h4 class="rajdhani uk-margin-remove">Ajouter projet</h4>
+        <h4 class="rajdhani uk-margin-remove">Ajouter un projet</h4>
        
         <form action="{{ route('ajouterProjetForm') }}" method="post" enctype="multipart/form-data" class="rajdhani">
             @csrf

@@ -36,7 +36,7 @@
                                     <img class="uk-border-circle" width="60" height="60" src="{{ URL::asset($equipe->photo) }}">
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h5 class="uk-margin-remove-bottom">{{ $equipe->nom . " " .$equipe->prenom }}</h5>
+                                    <h5 class="uk-margin-remove-bottom">{{ $equipe->nom . " " .$equipe->prenom.", ".$equipe->type_equipe }}</h5>
                                     <p class="uk-text-meta uk-margin-remove-top"><time>{{ $equipe->created_at }}</time></p>
                                 </div>
                             </div>

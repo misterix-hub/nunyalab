@@ -9,6 +9,7 @@ use App\MembreEquipe;
 use App\Projet;
 use App\Evenement;
 use App\APropos;
+use App\Galerie;
 
 class MainController extends Controller
 {
@@ -17,7 +18,9 @@ class MainController extends Controller
             "equipes" => MembreEquipe::orderBy('id')->limit(3)->get(),
             "projets" => Projet::all(),
             "evenements" => Evenement::orderByDesc('id')->limit(4)->get(),
-            "aPropos" => APropos::all()
+            "galeries" => Galerie::all(),
+            "aPropos" => APropos::all(),
+            "listeMembres" => MembreEquipe::all()
         ]);
     }
 
@@ -48,5 +51,22 @@ class MainController extends Controller
                 'listeProjets' => Projet::orderByDesc('id')->limit(3)->get()
             ]);
         }
+    }
+
+    public function membrequipe() {
+
+        return view('visitors.equipe.equipes', [
+            'listeMembres' => MembreEquipe::orderBy('id')->get()
+        ]);
+
+    }
+
+
+    public function galerie() {
+       
+        return view('visitors.galerie.galerie', [ 
+            'galerie' => Galerie::orderBy('id')->get()
+        ]);
+
     }
 }

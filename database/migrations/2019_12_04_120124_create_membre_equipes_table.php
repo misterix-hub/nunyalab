@@ -18,6 +18,7 @@ class CreateMembreEquipesTable extends Migration
             $table->string('nom');
             $table->string('prenom');
             $table->string('photo');
+            $table->string('type_equipe');
             $table->string('email');
             $table->string('facebook')->nullable();
             $table->string('whatsapp')->nullable();

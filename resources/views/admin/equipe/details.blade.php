@@ -45,6 +45,12 @@
                             <input readonly class="uk-input uk-width-1-1" required name="prenom" id="prenom" value="{{ $equipe->prenom }}">
                         </div>
                     </div>
+                    <div  class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s"><br />
+                        <div class="uk-inline uk-width-1-1 uk-margin-remove">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                            <input readonly class="uk-input uk-width-1-1" required name="type_equipe" id="type_equipe" value="{{ $equipe->type_equipe }}">
+                        </div>
+                    </div>
                     <div  class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">
                         <div class="uk-inline uk-width-1-1">
                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>

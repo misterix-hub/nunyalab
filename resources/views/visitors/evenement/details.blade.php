@@ -7,7 +7,7 @@
             <div class="uk-width-1-1">
                 <ul class="uk-breadcrumb">
                     <li><a href="{{ route('index') }}">Acceuil</a></li>
-                    <li><span href="">Détails évènement</span></li>
+                    <li><span href="">Détails de l\'évènement</span></li>
                 </ul>
             </div>
             <div class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">
@@ -31,7 +31,7 @@
                 <div class="uk-grid-small" uk-grid>
                     @foreach($listeEvenements as $listeEvenement) 
                         <div class="uk-width-1-2@l uk-width-1-1@m uk-width-1-1@s">
-                                <img src="{{ URL::asset($listeEvenement->banniere) }}" width="100%" alt="img">
+                                <img src="{{ URL::asset($listeEvenement->baniere) }}" width="100%" alt="img">
                         </div>
                         <div class="uk-width-1-2@l uk-width-1-2@m uk-width-1-1@s">
                             <h4 style="font-weight: 300; margin: 0 0 10px 0;">
